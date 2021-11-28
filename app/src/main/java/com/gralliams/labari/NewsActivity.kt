@@ -2,13 +2,13 @@ package com.gralliams.labari
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.gralliams.labari.databinding.ActivityMainBinding
+import com.gralliams.labari.databinding.ActivityNewsBinding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+class NewsActivity : AppCompatActivity() {
+    lateinit var binding: ActivityNewsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityNewsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
