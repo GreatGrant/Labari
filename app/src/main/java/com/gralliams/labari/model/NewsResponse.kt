@@ -1,4 +1,8 @@
 package com.gralliams.labari.model
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
 //https://newsapi.org/v2/top-headlines?country=ng&apiKey=b3babd6066a74538bca9864e5f88e6b6
 data class NewsResponse(
     val articles: List<Article>,
@@ -6,15 +10,18 @@ data class NewsResponse(
     val totalResults: Int
 )
 
+@Entity(tableName = "articles")
 data class Article(
-    val author: Any,
-    val content: Any,
-    val description: Any,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int? = null,
+    val author: String,
+    val content: String,
+    val description: String,
     val publishedAt: String,
     val source: Source,
     val title: String,
     val url: String,
-    val urlToImage: Any
+    val urlToImage: String
 )
 data class Source(
     val id: String,
