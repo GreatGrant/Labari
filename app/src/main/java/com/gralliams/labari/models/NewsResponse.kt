@@ -1,16 +1,17 @@
-package com.gralliams.labari.model
+package com.gralliams.labari.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-//https://newsapi.org/v2/top-headlines?country=ng&apiKey=b3babd6066a74538bca9864e5f88e6b6
 data class NewsResponse(
     val articles: List<Article>,
     val status: String,
     val totalResults: Int
 )
 
-@Entity(tableName = "articles")
+@Entity(
+    tableName = "articles"
+)
 data class Article(
     @PrimaryKey(autoGenerate = true)
     val id: Int? = null,
@@ -23,6 +24,7 @@ data class Article(
     val url: String,
     val urlToImage: String
 )
+
 data class Source(
     val id: String,
     val name: String

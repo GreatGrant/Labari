@@ -2,7 +2,7 @@ package com.gralliams.labari.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.gralliams.labari.model.Article
+import com.gralliams.labari.models.Article
 
 @Dao
 interface ArticleDao {

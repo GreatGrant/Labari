@@ -1,6 +1,6 @@
 package com.gralliams.labari.api
 
-import com.gralliams.labari.model.NewsResponse
+import com.gralliams.labari.models.NewsResponse
 import com.gralliams.labari.util.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
