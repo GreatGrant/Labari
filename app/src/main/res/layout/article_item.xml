@@ -35,7 +35,7 @@
                     android:tint="@color/design_default_color_error" />
 
                 <TextView
-                    android:id="@+id/newsname"
+                    android:id="@+id/source"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
