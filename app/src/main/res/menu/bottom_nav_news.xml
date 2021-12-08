@@ -5,15 +5,15 @@
     <item
         android:id="@+id/breakingNewsFragment"
         android:icon="@drawable/ic_baseline_new_releases_24"
-        android:title=" Breaking News" />
+        android:title="@string/breaking_news" />
 
     <item
         android:id="@+id/savedNewsFragment"
         android:icon="@drawable/ic_baseline_folder_special_24"
-        android:title="Archive" />
+        android:title="@string/archive" />
 
     <item
         android:id="@+id/searchNewsFragment"
         android:icon="@drawable/ic_baseline_search_24"
-        android:title="Search News" />
+        android:title="@string/search_news" />
 </menu>
