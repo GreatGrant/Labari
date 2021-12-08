@@ -23,6 +23,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsHolder>() {
         var article = differ.currentList[position]
         holder.itemBinding.apply {
             Glide.with(holder.itemView).load(article.urlToImage).into(articleImg)
+            Glide.with(holder.itemView).load(article.urlToImage).into(smallImg)
             articleTitle.text = article.title
             articleDescription.text = article.description
             source.text = article.source.name
@@ -35,7 +36,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsHolder>() {
     }
 
     private var onItemClickListener : ((Article) -> Unit) ? = null
-    fun setOnItemClickListener(listener: (Article)-> Unit){
+    private fun setOnItemClickListener(listener: (Article)-> Unit){
         onItemClickListener = listener
     }
 
