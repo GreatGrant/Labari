@@ -8,7 +8,6 @@ import com.gralliams.labari.models.Article
     entities = [Article::class],
     version = 1
 )
-
 @TypeConverters(Converters::class)
 abstract class ArticleDatabase : RoomDatabase(){
     abstract fun getDao(): ArticleDao
@@ -18,7 +17,7 @@ abstract class ArticleDatabase : RoomDatabase(){
 
         @Volatile
         var instance: ArticleDatabase? = null
-        val LOCK = Any()
+        private val LOCK = Any()
 
 
         operator fun invoke (context: Context) = instance ?: synchronized(LOCK){

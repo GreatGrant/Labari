@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:id="@+id/mScrollView"
-    android:scrollbars="none"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-
-        <TextView
-            android:id="@+id/storiesToread"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="start"
-            android:padding="5dp"
-            android:text="Stories to read"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/listview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            tools:listitem="@layout/article_item"
-            android:background="#f2f2f2"
-            android:paddingBottom="64dp"
-            android:scrollbars="none" />
-    </ScrollView>
+    android:layout_height="match_parent">
+</androidx.constraintlayout.widget.ConstraintLayout>

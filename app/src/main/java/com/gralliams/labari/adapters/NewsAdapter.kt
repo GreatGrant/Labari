@@ -11,11 +11,6 @@ import com.gralliams.labari.models.Article
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsHolder>() {
 
-
-    inner class NewsHolder(var itemBinding: ArticleItemBinding): RecyclerView.ViewHolder(itemBinding.root) {
-
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
      NewsHolder(ArticleItemBinding.inflate(
          LayoutInflater.from(parent.context),
@@ -54,4 +49,9 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsHolder>() {
     }
 
     var differ = AsyncListDiffer(this, differCallBack)
+
+    inner class NewsHolder(var itemBinding: ArticleItemBinding): RecyclerView.ViewHolder(itemBinding.root) {
+
+    }
+
 }
