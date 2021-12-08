@@ -28,7 +28,7 @@ class NewsActivity : AppCompatActivity() {
         val navView: BottomNavigationView = binding.bottomNavigationView
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.newsNavHostFragment) as NavHostFragment
         val navController = navHostFragment.navController
-//        val navController = findNavController(R.id.newsNavHostFragment)
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
