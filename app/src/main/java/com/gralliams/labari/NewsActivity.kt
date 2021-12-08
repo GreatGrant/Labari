@@ -41,7 +41,7 @@ class NewsActivity : AppCompatActivity() {
 
 //        Setup for viewModel
         var newsRepository = NewsRepository(ArticleDatabase(applicationContext))
-        var viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
+        var viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository = newsRepository, app =application)
         viewModel = ViewModelProvider(this, viewModelProviderFactory)[NewsViewModel::class.java]
 
     }
